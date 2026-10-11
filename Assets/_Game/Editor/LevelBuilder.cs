@@ -146,6 +146,7 @@ public static class LevelBuilder
         EditorSceneManager.SaveScene(scene, ScenePath);
         AddSceneToBuildSettings();
         AssetDatabase.SaveAssets();
+        MissionAutoSetup.UsePlayModeStartScene();
         Debug.Log("[LevelBuilder] Mission_PowerPlant built and saved. Press Play.");
     }
 
